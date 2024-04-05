@@ -1,5 +1,5 @@
 function fredFilter(arr, callback) {
-  let filteredArr = [];
+  const filteredArr = [];
 
   for (let i = 0; i < arr.length; i++) {
     const currentElement = arr[i];
@@ -9,6 +9,7 @@ function fredFilter(arr, callback) {
       // Instead of push, manually add to the end of filteredArr
       filteredArr[filteredArr.length] = currentElement;
     }
+    
   }
   return filteredArr;
 }
